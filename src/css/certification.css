@@ -1,0 +1,252 @@
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+
+.profile-card {
+    background-color: #c4e3f3;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    position: absolute;
+    top: -65px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    max-width: 100px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+
+.profile-info {
+    color: #BDBDBD;
+    padding: 25px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.profile-info h2 {
+    color: white;
+    letter-spacing: 4px;
+    padding-bottom: 12px;
+}
+
+.profile-info span {
+    display: block;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.profile-info a {
+    color: #4CB493;
+}
+
+.profile-info i {
+    padding: 15px 35px 0px 35px;
+}
+
+
+.profile-card:hover .profile-pic {
+
+    transform: scale(1.1);
+}
+
+.profile-card:hover .profile-info hr  {
+    opacity: 1;
+}
+
+
+/* Underline From Center */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 52%;
+    right: 52%;
+    bottom: 0;
+    background: #FFFFFF;
+    border-radius: 50%;
+    height: 3px;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.profile-card:hover .hvr-underline-from-center:before, .profile-card:focus .hvr-underline-from-center:before, .profile-card:active .hvr-underline-from-center:before {
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #CECECE;
+
+}
+
+.works{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.works h2, .about h2, .contact h2{
+    font-size: 24px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.works ul li{
+    font-size: 14px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #dddddd;
+    margin: 23px 6px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    -ms-transition: all .5s ease 0s;
+}
+.works ul li:hover{
+    background: #2c3e50;
+    border-color: #2c3e50;
+    color: #fff;
+}
+.works ul li.active{
+    background: #2c3e50;
+    border-color: #2c3e50;
+    color: #fff;
+}
+.single-work img{
+    width: 100%;
+    height: 100%;
+}
+.single-work{
+    position: relative;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 62, 80, 0.76);
+    margin-top: -400px;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+}
+.single-work:hover .overlay{
+    margin-top: 0;
+}
+.overlay h3{
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 25%;
+    margin-bottom: 10px;
+}
+.overlay a i.fa{
+    font-size: 25px;
+    color: #fff;
+    padding: 10px;
+}
+.overlay a i.fa:focus{
+    outline: none;
+}
+.modal-dialog {
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 0 !important;
+}
+.modal-header{
+    border: none;
+}
+.modal-header h4{
+    font-size: 30px;
+    color: #444444;
+    text-transform: uppercase;
+}
+.modal-header .close{
+    font-size: 100px;
+}
+.modal-content{
+    border-radius: 0;
+    border: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+.modal-body img{
+    margin-bottom: 35px;
+}
+.modal-body p{
+    font-size: 18px;
+    color: #444444;
+    text-align: left;
+}
+.modal-body ul{
+    display: inline-block;
+    border: 1px solid #dddddd;
+    margin-bottom: 30px;
+}
+.modal-body ul li{
+    border: none;
+    margin: 0;
+    cursor: inherit;
+    border-right: 1px solid #dddddd;
+    font-style: italic;
+    text-transform: inherit;
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 1;
+}
+.modal-body ul li:last-child{
+    border: none;
+}
+.modal-body ul li:hover{
+    background: inherit;
+    color: inherit;
+    border-color: inherit;
+}
+.modal-footer{
+    text-align: center;
+    border: none;
+}
+.works .mix{
+    display: none;
+}
