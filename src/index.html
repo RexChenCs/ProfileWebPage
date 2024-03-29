@@ -1,764 +1,863 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rex Chen - Portfolio</title>
 
-    <!-- Disable tap highlight on IE -->
-    <meta name="msapplication-tap-highlight" content="no">
-    <!-- Web Application Manifest -->
-    <link rel="manifest" href="manifest.json">
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Rex">
-    <link rel="icon" sizes="192x192" href="./touch/chrome-touch-icon-192x192.png">
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Rex">
-    <link rel="apple-touch-icon" href="./touch/apple-touch-icon.png">
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="./touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#2F3BA2">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rex Chen - Portfolio</title>
 
-    <!-- Bootstrap -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- Web Application Manifest -->
+	<link rel="manifest" href="manifest.json">
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Rex">
+	<link rel="icon" sizes="192x192" href="./touch/chrome-touch-icon-192x192.png">
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Rex">
+	<link rel="apple-touch-icon" href="./touch/apple-touch-icon.png">
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="./touch/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#2F3BA2">
 
-    <!-- google font -->
-    <link href="./css/googleFontRalewayFamily.css" rel="stylesheet">
-    <link href="./css/googleFontOswaldFamily.css" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- google font -->
+	<link href="./css/googleFontRalewayFamily.css" rel="stylesheet">
+	<link href="./css/googleFontOswaldFamily.css" rel="stylesheet">
 
 
-    <!--- font awesome css -->
-    <link href="./css/font-awesome.min.css" rel="stylesheet"  media="all">
+	<!--- font awesome css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--- font awesome css -->
-    <link rel="stylesheet" href="./css/animate.css">
+	<!--- font awesome css -->
+	<link rel="stylesheet" href="./css/animate.css">
 
-    <!-- carousel stylesheet -->
-    <link rel="stylesheet" href="./css/owl.carousel.css">
-    <link rel="stylesheet" href="./css/owl.theme.css">
-    <link rel="stylesheet" href="./css/owl.transitions.css">
+	<!-- carousel stylesheet -->
+	<link rel="stylesheet" href="./css/owl.carousel.css">
+	<link rel="stylesheet" href="./css/owl.theme.css">
+	<link rel="stylesheet" href="./css/owl.transitions.css">
 
-    <!-- main stylesheet-->
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/certification.css">
+	<!-- main stylesheet-->
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/responsive.css">
+	<link rel="stylesheet" href="./css/certification.css">
+	<script src="./js/home/embed.js"></script>
+	<script src="./js/home/modernizr-2.6.2.min.js"></script>
+	<script src="./js/home/sweetalert.min.js"></script>
+</head>
 
-    <script src="./js/home/embed.js"></script>
-    <script src="./js/home/modernizr-2.6.2.min.js"></script>
-    <script src="./js/home/sweetalert.min.js"></script>
-    <script src="./js/home/firebase.js"></script>
-    <script src="./js/home/firebaseConfig.js"></script>
-  </head>
-  <body>
+<body>
 
-	    <!-- start preloader ========================== -->
-		<div id="preloader">
-			<div id="status">&nbsp;</div>
+	<!-- start preloader ========================== -->
+	<div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div>
+
+	<!-- start header ========================-->
+	<header id="navigation" class="navbar-fixed-top">
+		<div class="container">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="index.html">
+					<h2>REX PORTFOLIO</h2>
+				</a>
+
+			</div>
+
+			<!-- main nav -->
+			<nav class="collapse navigation navbar-collapse navbar-right" id="main-navbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#welcome-slider">home</a></li>
+					<li><a href="#skill-set">skill</a></li>
+					<li><a href="#education">education</a></li>
+					<li><a href="#project">project</a></li>
+					<li><a href="#certification">certification</a></li>
+					<li><a href="#work-experience">experience</a></li>
+				</ul>
+			</nav>
+			<!-- /main nav -->
 		</div>
-
-        <!-- start header ========================-->
-		<header id="navigation" class="navbar-fixed-top">
-            <div class="container">
-
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle= "collapse" data-target="#main-navbar">
-						 <span class="sr-only">Toggle navigation</span>
-						 <span class="icon-bar"></span>
-						 <span class="icon-bar"></span>
-						 <span class="icon-bar"></span>
-					</button>
-
-                    <a class="navbar-brand" href="index.html"><h2>REX PORTFOLIO</h2></a>
-
-                    </div>
-
-                    <!-- main nav -->
-                    <nav class="collapse navigation navbar-collapse navbar-right" id="main-navbar">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#welcome-slider">home</a></li>
-                            <li><a href="#skill-set">skill</a></li>
-                            <li><a href="#education">education</a></li>
-                            <li><a href="#project">project</a></li>
-							<li><a href="#certification">certification</a></li>
-							<li><a href="#work-experience">experience</a></li>
-                            <li><a href="#contact">contact</a></li>
-                        </ul>
-                    </nav>
-                    <!-- /main nav -->
-                </div>
-        </header>
-		<!-- end header ==================-->
+	</header>
+	<!-- end header ==================-->
 
 
 
 
 
-		<!-- welcome area -->
-		<section class="welcome-area">
+	<!-- welcome area -->
+	<section class="welcome-area">
 
-			<div id="welcome-slider" class="carousel slide carousel-right" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#home-slider" data-slide-to="0" class="active"></li>
-					<li data-target="#home-slider" data-slide-to="1"></li>
-					<li data-target="#home-slider" data-slide-to="2"></li>
-				</ol>
+		<div id="welcome-slider" class="carousel slide carousel-right" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#home-slider" data-slide-to="0" class="active"></li>
+				<li data-target="#home-slider" data-slide-to="1"></li>
+				<li data-target="#home-slider" data-slide-to="2"></li>
+			</ol>
 
-				<div class="carousel-inner">
-					<div class="item active" style="background-image: url(img/home/slider/bg.jpg)">
-						<div class="slider-overlay"></div>
-						<div class="welcome-text">
-							<h2 class="wow fadeInDown" data-wow-delay="0.3s">I am a Software Engineer</h2>
-							<p class="wow fadeInDown" data-wow-delay="0.6s">I love to turn great ideas into beautiful products.</p>
-							<a data-toggle="modal" data-target="#myModal"  class="btn btn-success wow fadeInDown" data-wow-delay="0.9s">see portfolio</a>
-						</div>
+			<div class="carousel-inner">
+				<div class="item active" style="background-image: url(img/home/slider/bg.jpg)">
+					<div class="slider-overlay"></div>
+					<div class="welcome-text">
+						<h2 class="wow fadeInDown" data-wow-delay="0.3s">I am a Software Engineer</h2>
+						<p class="wow fadeInDown" data-wow-delay="0.6s">I love to turn great ideas into beautiful
+							products.</p>
+						<a data-toggle="modal" data-target="#myModal" class="btn btn-success wow fadeInDown"
+							data-wow-delay="0.9s">see portfolio</a>
 					</div>
-					<div class="item " style="background-image: url(img/home/slider/bg2.jpg)">
-						<div class="slider-overlay"></div>
-						<div class="welcome-text">
-							<h2 class="wow fadeInDown" data-wow-delay="0.3s">I am a Software Engineer</h2>
-							<p class="wow fadeInDown" data-wow-delay="0.6s">I love to turn great ideas into beautiful products.</p>
-							<a data-toggle="modal" data-target="#myModal" class="btn btn-success wow fadeInDown" data-wow-delay="0.9s">see portfolio</a>
-						</div>
+				</div>
+				<div class="item " style="background-image: url(img/home/slider/bg2.jpg)">
+					<div class="slider-overlay"></div>
+					<div class="welcome-text">
+						<h2 class="wow fadeInDown" data-wow-delay="0.3s">I am a Software Engineer</h2>
+						<p class="wow fadeInDown" data-wow-delay="0.6s">I love to turn great ideas into beautiful
+							products.</p>
+						<a data-toggle="modal" data-target="#myModal" class="btn btn-success wow fadeInDown"
+							data-wow-delay="0.9s">see portfolio</a>
 					</div>
-					<div class="item " style="background-image: url(img/home/slider/bg3.jpg)">
-						<div class="slider-overlay"></div>
-						<div class="welcome-text">
-							<h2 class="wow fadeInDown" data-wow-delay="0.3s">I am a Software Engineer</h2>
-							<p class="wow fadeInDown" data-wow-delay="0.6s">I love to turn great ideas into beautiful products.</p>
-							<a data-toggle="modal" data-target="#myModal" class="btn btn-success wow fadeInDown" data-wow-delay="0.9s">see portfolio</a>
+				</div>
+				<div class="item " style="background-image: url(img/home/slider/bg3.jpg)">
+					<div class="slider-overlay"></div>
+					<div class="welcome-text">
+						<h2 class="wow fadeInDown" data-wow-delay="0.3s">I am a Software Engineer</h2>
+						<p class="wow fadeInDown" data-wow-delay="0.6s">I love to turn great ideas into beautiful
+							products.</p>
+						<a data-toggle="modal" data-target="#myModal" class="btn btn-success wow fadeInDown"
+							data-wow-delay="0.9s">see portfolio</a>
+					</div>
+				</div>
+			</div>
+
+			<a class="left-control" href="#welcome-slider" data-slide="prev"><img src="img/home/profile/back.png"
+					alt="" /></a>
+			<a class="right-control" href="#welcome-slider" data-slide="next"><img src="img/home/profile/next.png"
+					alt="" /></a>
+
+		</div>
+	</section>
+	<!-- /welcome area -->
+
+	<!-- skills area -->
+	<section id="skill-set" class="skill-area">
+		<div class="container">
+			<div class="row">
+				<div class="skill-text">
+					<h2><span>Skill Set</span></h2>
+					<p>Language and Platform Skills</p>
+				</div>
+				<ul class="tab">
+					<li class=" col-md-2 col-sm-6 col-xs-12">
+						<div class="round"></div>
+						<div class="root"></div>
+						<i class="fa fa-cogs"></i>
+						<h2>Programming & Scripting</h2>
+						<ul>
+							<li>Java</li>
+							<li>JavaScript</li>
+							<li>NodeJS</li>
+						</ul>
+					</li>
+					<li class=" col-md-2 col-sm-6 col-xs-12">
+						<div class="round"></div>
+						<div class="root"></div>
+						<i class="fa fa-database"></i>
+						<h2>Database</h2>
+						<ul>
+							<li>Oracle SQL</li>
+							<li>MongoDB</li>
+							<li>PostgreSQL</li>
+							<li>Redis</li>
+						</ul>
+					</li>
+					<li class=" col-md-2 col-sm-6 col-xs-12">
+						<div class="round"></div>
+						<div class="root"></div>
+						<i class="fa fa-globe"></i>
+						<h2>Web & Source Control</h2>
+						<ul>
+							<li>HTML/CSS</li>
+							<li>Bootstrap</li>
+							<li>JQuery</li>
+							<li>Ajax</li>
+							<li>Git</li>
+						</ul>
+					</li>
+					<li class=" col-md-2 col-sm-6 col-xs-12">
+						<div class="round"></div>
+						<div class="root"></div>
+						<i class="fa fa-windows"></i>
+						<h2>Operating System</h2>
+						<ul>
+							<li>Window</li>
+							<li>Mac OS</li>
+							<li>Linux</li>
+						</ul>
+					</li>
+
+					<li class=" col-md-2 col-sm-6 col-xs-12">
+						<div class="round"></div>
+						<div class="root"></div>
+						<i class="fa fa-cloud"></i>
+						<h2>Cloud Services</h2>
+						<ul>
+							<li>GCP</li>
+							<li>SFMC</li>
+							<li>AWS</li>
+						</ul>
+					</li>
+
+					<li class=" col-md-2 col-sm-6 col-xs-12">
+						<div class="round"></div>
+						<div class="root"></div>
+						<i class="fa fa-list"></i>
+						<h2>Others</h2>
+						<ul>
+							<li>Kafka</li>
+							<li>CircleCI</li>
+							<li>Hardness</li>
+							<li>ArgoCD</li>
+							<li>Splunk</li>
+							<li>Docker</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- / creativity area -->
+
+
+	<!-- start education area -->
+	<section id="education" class="education-area">
+		<div class="container">
+			<div class="row">
+				<h2 class="education-header">Education</h2>
+				<div class="col-md-12 col-sm-6">
+					<div class="single-education wow fadeInDown" data-wow-delay="0.3s">
+						<i class="fa fa-graduation-cap"></i>
+						<h2>B.S in Computer Science Major</h2>
+						<p>Stony Brook University (2012-2016)</p>
+					</div>
+				</div>
+				<div class="col-md-12 col-sm-6">
+					<div class="single-education wow fadeInDown" data-wow-delay="0.5s">
+						<i class="fa fa-graduation-cap"></i>
+						<h2>B.S in Applied Mathematics & Statistics Second Major</h2>
+						<p>Stony Brook University (2012-2016)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end education area -->
+
+
+	<!-- start project area -->
+	<section id="project" class="project-area">
+		<div class="container">
+			<div class="row">
+				<h2 class="project-header">Recent Project</h2>
+
+				<div class="col-md-4 col-sm-4">
+					<div class="single-project wow zoomIn">
+						<a href="budgetManager.html">
+							<img src="./img/budgetManager/bm0.png" alt="budgetManager-sample" /></a>
+						<div class="project-details">
+							<h2>Budget Manager</h2>
+							<p>
+								Budget Manager transforms daily / monthly / yearly data into accurate analysis to
+								collect and organize your financial plan!
+							</p>
 						</div>
 					</div>
 				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="single-project wow zoomIn">
+						<a href="fireBrickLife.html">
+							<img src="img/fireBrickLife/fbl0.png" alt="fireBrickLife-sample" /></a>
+						<div class="project-details">
+							<h2>Fire Brick Life</h2>
+							<p>
+								Fire Brick Life is a Tower Defence War Game that keeps you enjoy
+								defending against attacks of the Chinese mythology monsters!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="single-project wow zoomIn">
+						<a href="wolfieChat.html">
+							<img src="img/wolfieChat/wolfie0.png" alt="wolfieChat-sample" />
+						</a>
+						<div class="project-details">
+							<h2>Wolfie Chat</h2>
+							<p>
+								A Chat Service allows users login and send messages to each other!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="single-project hide-project">
+						<a href="journeyThroughEurope.html">
+							<img src="img/journeyThroughEurope/game_pj0.png" alt="journeyThroughEurope-sample" />
+						</a>
+						<div class="project-details">
+							<h2>Journey Through Europe</h2>
+							<p>
+								Journey Through Europe is a travel game of strategy. The players go on a journey through
+								Europe!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="single-project hide-project">
+						<a href="redisClient.html">
+							<img src="img/redisClient/rc0.png" alt="redisClient-sample" />
+						</a>
+						<div class="project-details">
+							<h2>Redis Client</h2>
+							<p>
+								Redis Client Gui supports to connect redis server with TLS/SSL!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="single-project hide-project">
+						<img src="img/home/project/pending.png" alt="pending" />
+						<div class="project-details">
+							<h2>Pending</h2>
+							<p>
+								Pending
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div style="margin-top:20px;"><a href="" class="all-works">see all work</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end project area -->
 
-				<a class="left-control" href="#welcome-slider" data-slide="prev"><img src="img/home/profile/back.png" alt="" /></a>
-				<a class="right-control" href="#welcome-slider" data-slide="next"><img src="img/home/profile/next.png" alt="" /></a>
+	<!-- start certification area -->
+	<section id="certification" class="certification-area">
+		<div class="container">
+			<div class="row">
+				<h2 class="certification-header">Latest Certification</h2>
+
+				<div id="cert">
+					<div class="container">
+						<!-- portfolio section -->
+						<section class="works text-center">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="list-inline">
+											<li class="filter active" data-filter=".all">All</li>
+											<li class="filter" data-filter=".software-development">Software Development
+											</li>
+											<li class="filter" data-filter=".web-AWS">Amazon Web Services</li>
+											<li class="filter" data-filter=".web-Database">Database</li>
+										</ul>
+									</div>
+
+
+									<!-- single portfolio item -->
+									<div class="col-md-4 col-sm-6 mix software-development all" data-myorder="2">
+
+										<div class="single-work wow slideInLeft" data-wow-delay="0.3s">
+											<img src="img/home/cert/cert1.jpg" alt="#">
+											<div class="overlay">
+												<h3>MTA: Software Development Fundamentals</h3>
+												<a href="#" type="button" data-toggle="modal" data-target="#myModal1">
+													<i class="fa fa-search-plus"></i></a>
+												<!-- Modal -->
+												<div class="modal fade" id="myModal1" role="dialog">
+													<div class="modal-dialog">
+														<!-- Modal content-->
+														<div class="modal-content text-center">
+															<div class="modal-header">
+																<button type="button" class="close"
+																	data-dismiss="modal">&times;</button>
+																<h4>MTA: Software Development Fundamentals</h4>
+															</div>
+															<div class="col-md-12">
+																<div class="modal-body col-md-8 col-md-offset-2">
+																	<ul class="list-inline">
+																		<li>ISSUED BY Microsoft</li>
+																		<li>ISSUED ON 10 Jun 2017</li>
+																	</ul>
+																	<div class="profile-card text-center">
+
+																		<div class="profile-info">
+																			<h2 class="hvr-underline-from-center">
+																				<span>MTA: Software Development
+																					Fundamentals</span></h2>
+																			<div class="cert-info">
+																				<h4>Skills:</h4>
+																				<button class="button button4">Core
+																					Programming</button>
+																				<button
+																					class="button button4">Databases</button>
+																				<button class="button button4">Desktop
+																					Applications</button>
+																				<button class="button button4">General
+																					Software Development</button>
+																				<button
+																					class="button button4">Object-oriented
+																					Programming</button>
+																				<button class="button button4">Web
+																					Applications</button>
+																			</div>
+																		</div>
+
+																	</div>
+
+
+																</div>
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default"
+																	data-dismiss="modal">Close <i
+																		class="fa fa-times"></i></button>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+									</div>
+									<!-- single cert item -->
+									<div class="col-md-4 col-sm-6 mix web-AWS all" data-myorder="3">
+										<div class="single-work wow slideInDown" data-wow-delay="0.3s">
+											<img src="img/home/cert/cert2.jpg" alt="#">
+											<div class="overlay">
+												<h3>AWS Certified Developer - Associate</h3>
+												<a href="#" data-toggle="modal" data-target="#myModal3"><i
+														class="fa fa-search-plus"></i></a>
+												<div class="modal fade" id="myModal3" role="dialog">
+													<div class="modal-dialog">
+
+														<!-- Modal content-->
+														<div class="modal-content text-center">
+															<div class="modal-header">
+																<button type="button" class="close"
+																	data-dismiss="modal">&times;</button>
+																<h4>AWS Certified Developer - Associate</h4>
+															</div>
+															<div class="col-md-12">
+																<div class="modal-body col-md-8 col-md-offset-2">
+																	<ul class="list-inline list">
+																		<li>ISSUED BY Amazon</li>
+																		<li>ISSUED ON 6 Feb 2018</li>
+																	</ul>
+
+																	<div class="profile-card text-center">
+																		<div class="profile-info">
+																			<h2 class="hvr-underline-from-center">
+																				<span>AWS Certified Developer –
+																					Associate</span>
+																			</h2>
+																			<div>
+																				<h4>Skills:</h4>
+																				<button class="button button4">AWS
+																					Fundamentals</button>
+																				<button class="button button4">Designing
+																					and Developing</button>
+																				<button
+																					class="button button4">Deployment
+																					and Security</button>
+																				<button
+																					class="button button4">Debugging</button>
+																			</div>
+																		</div>
+
+																	</div>
+
+
+																</div>
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default"
+																	data-dismiss="modal">Close <i
+																		class="fa fa-times"></i></button>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- single cert item -->
+									<div class="col-md-4 col-sm-6 mix web-Database all" data-myorder="4">
+										<div class="single-work wow slideInRight" data-wow-delay="0.3s">
+											<img src="img/home/cert/cert3.jpg" alt="#">
+											<div class="overlay">
+												<h3>MTA: Database Fundamentals</h3>
+												<a href="#" data-toggle="modal" data-target="#myModal5"><i
+														class="fa fa-search-plus"></i></a>
+												<div class="modal fade" id="myModal5" role="dialog">
+													<div class="modal-dialog">
+
+														<!-- Modal content-->
+														<div class="modal-content text-center">
+															<div class="modal-header">
+																<button type="button" class="close"
+																	data-dismiss="modal">&times;</button>
+																<h4>MTA: Database Fundamentals</h4>
+															</div>
+															<div class="col-md-12">
+																<div class="modal-body col-md-8 col-md-offset-2">
+																	<ul class="list-inline">
+																		<li>ISSUED BY Microsoft</li>
+																		<li>ISSUED ON 14 Jun 2017</li>
+																	</ul>
+
+																	<div class="profile-card text-center">
+																		<div class="profile-info">
+																			<h2 class="hvr-underline-from-center">
+																				<span>MTA: Database Fundamentals</span>
+																			</h2>
+																			<div>
+																				<h4>Skills:</h4>
+																				<button class="button button4">Core
+																					Database Concepts</button>
+																				<button class="button button4">Creating
+																					Database Objects</button>
+																				<button class="button button4">Data
+																					Manipulation </button>
+																				<button class="button button4">Data
+																					Storage</button>
+																				<button class="button button4">Database
+																					Administration</button>
+																			</div>
+																		</div>
+
+																	</div>
+
+																</div>
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default"
+																	data-dismiss="modal">Close <i
+																		class="fa fa-times"></i></button>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+									<!-- single cert item -->
+									<div class="col-md-4 col-sm-6 mix web-Database all" data-myorder="8">
+										<div class="single-work wow slideInLeft" data-wow-delay="0.5s">
+											<img src="img/home/cert/cert4.jpg" alt="#">
+											<div class="overlay">
+												<h3>Exam 461: Querying Microsoft SQL Server 2012/2014</h3>
+												<a href="#" data-toggle="modal" data-target="#myModal9"><i
+														class="fa fa-search-plus"></i></a>
+												<div class="modal fade" id="myModal9" role="dialog">
+													<div class="modal-dialog">
+
+														<!-- Modal content-->
+														<div class="modal-content text-center">
+															<div class="modal-header">
+																<button type="button" class="close"
+																	data-dismiss="modal">&times;</button>
+																<h4>Exam 461: Querying Microsoft SQL Server 2012/2014
+																</h4>
+															</div>
+															<div class="col-md-12">
+																<div class="modal-body col-md-8 col-md-offset-2">
+																	<ul class="list-inline">
+																		<li>ISSUED BY Microsoft</li>
+																		<li>ISSUED ON 16 Dec 2017</li>
+																	</ul>
+
+																	<div class="profile-card text-center">
+																		<div class="profile-info">
+																			<h2 class="hvr-underline-from-center">
+																				<span>Querying Microsoft SQL
+																					Server</span>
+																			</h2>
+																			<div>
+																				<h4>Skills:</h4>
+																				<button class="button button4">Data
+																					Management</button>
+																				<button class="button button4">Database
+																					Management</button>
+																				<button class="button button4">Microsoft
+																					SQL Server 2012</button>
+																				<button class="button button4">Microsoft
+																					SQL Server 2014</button>
+																				<button
+																					class="button button4">Troubleshoot
+																					Queries</button>
+																			</div>
+																		</div>
+																	</div>
+
+																</div>
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default"
+																	data-dismiss="modal">Close <i
+																		class="fa fa-times"></i></button>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section><!-- end of section -->
+
+					</div>
+				</div><!-- /cert page-->
+
+
 
 			</div>
-		</section>
-		<!-- /welcome area -->
+		</div>
+	</section>
+	<!-- end cert area -->
 
-		<!-- skills area -->
-		<section id="skill-set" class="skill-area">
-			<div class="container">
-				<div class="row">
-					<div class="skill-text">
-						<h2><span>Skill Set</span></h2>
-						<p>Language and Platform Skills</p>
-					</div>
-					<ul class="tab">
-						  <li class=" col-md-3 col-sm-6 col-xs-12">
-							<div class="round"></div>
-							<div class="root"></div>
-							<i class="fa fa-cogs"></i>
-							<h2>Programming & Scripting</h2>
-							  <ul>
-								  <li>Java</li>
-								  <li>JavaScript</li>
-								  <li>PHP</li>
-							  </ul>
-						  </li>
-						  <li class=" col-md-3 col-sm-6 col-xs-12">
-							<div class="round"></div>
-							<div class="root"></div>
-							<i class="fa fa-database"></i>
-							<h2>Database</h2>
-							  <ul>
-								  <li>Oracle SQL</li>
-								  <li>SQL Server</li>
-								  <li>Redis</li>
-							  </ul>
-						  </li>
-						  <li class=" col-md-3 col-sm-6 col-xs-12">
-							<div class="round"></div>
-							<div class="root"></div>
-							<i class="fa fa-globe"></i>
-							<h2>Web & Source Control</h2>
-							  <ul>
-								  <li>HTML/CSS</li>
-								  <li>Bootstrap</li>
-								  <li>JQuery</li>
-								  <li>Ajax</li>
-								  <li>Git</li>
-							  </ul>
+	<!-- start work experience area -->
+	<section id="work-experience" class="work-step-area">
+		<div class="container">
+			<div class="row">
+				<h2 class="work-step-header">Work Experience</h2>
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="bar wow fadeInDown" data-wow-delay="1.5s"></div>
+					<div class="step">
+						<ul class="steps">
+							<li>
+								<div class="single-step wow slideInRight" data-wow-delay="0.3s">
+									<h2>Aetna</h2>
+									<p>Software Engineer</p>
+								</div>
 							</li>
-						  <li class=" col-md-3 col-sm-6 col-xs-12">
-							<div class="round"></div>
-							<div class="root"></div>
-							<i class="fa fa-windows"></i>
-							<h2>Operating System</h2>
-							  <ul>
-								  <li>Window</li>
-								  <li>Mac OS</li>
-								  <li>Linux</li>
-							  </ul>
+							<li class="left">
+								<div class="single-step wow slideInLeft" data-wow-delay="0.3s">
+									<h2>Comcast</h2>
+									<p>Software Developer</p>
+								</div>
+							</li>
+							<li>
+								<div class="single-step wow slideInRight" data-wow-delay="0.3s">
+									<h2>CVS Health</h2>
+									<p>Java Developer</p>
+								</div>
+							</li>
+							<li class="left">
+								<div class="single-step wow slideInLeft" data-wow-delay="0.3s">
+									<h2>GO3 Solutions, inc</h2>
+									<p>Web Developer Internsip</p>
+								</div>
 							</li>
 						</ul>
-				</div>
-			</div>
-		</section>
-		<!-- / creativity area -->
-
-
-		<!-- start education area -->
-		<section id="education" class="education-area">
-			<div class="container">
-				<div class="row">
-					<h2 class="education-header">Education</h2>
-					<div class="col-md-12 col-sm-6">
-						<div class="single-education wow fadeInDown" data-wow-delay="0.3s">
-							<i class="fa fa-graduation-cap"></i>
-							<h2>B.S in Computer Science Major</h2>
-							<p>Stony Brook University (2012-2016)</p>
-						</div>
-					</div>
-					<div class="col-md-12 col-sm-6">
-						<div class="single-education wow fadeInDown" data-wow-delay="0.5s">
-							<i class="fa fa-graduation-cap"></i>
-							<h2>B.S in Applied Mathematics & Statistics Second Major</h2>
-							<p>Stony Brook University (2012-2016)</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end education area -->
-
-
-		<!-- start project area -->
-		<section id="project" class="project-area">
-			<div class="container">
-				<div class="row">
-					<h2 class="project-header">Recent Project</h2>
-
-					<div class="col-md-4 col-sm-4">
-						<div class="single-project wow zoomIn">
-							<a href="budgetManager.html">
-								<img src="./img/budgetManager/bm0.png" alt="budgetManager-sample" /></a>
-							<div class="project-details">
-								<h2>Budget Manager</h2>
-								<p>
-									Budget Manager transforms daily / monthly / yearly data into accurate analysis to collect and organize your financial plan!
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="single-project wow zoomIn">
-							<a href="fireBrickLife.html">
-								<img src="img/fireBrickLife/fbl0.png" alt="fireBrickLife-sample" /></a>
-							<div class="project-details">
-								<h2>Fire Brick Life</h2>
-								<p>
-									Fire Brick Life is a Tower Defence War Game that keeps you enjoy
-									defending against attacks of the Chinese mythology monsters!
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="single-project wow zoomIn">
-							<a href="wolfieChat.html">
-								<img src="img/wolfieChat/wolfie0.png" alt="wolfieChat-sample" />
-							</a>
-							<div class="project-details">
-								<h2>Wolfie Chat</h2>
-								<p>
-									A Chat Service allows users login and send messages to each other!
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="single-project hide-project">
-							<a href="journeyThroughEurope.html">
-								<img src="img/journeyThroughEurope/game_pj0.png" alt="journeyThroughEurope-sample" />
-							</a>
-							<div class="project-details">
-								<h2>Journey Through Europe</h2>
-								<p>
-									Journey Through Europe is a travel game of strategy. The players go on a journey through Europe!
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="single-project hide-project">
-              <a href="redisClient.html">
-								<img src="img/redisClient/rc0.png" alt="redisClient-sample" />
-              </a>
-							<div class="project-details">
-								<h2>Redis Client</h2>
-								<p>
-									Redis Client Gui supports to connect redis server with TLS/SSL!
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="single-project hide-project">
-								<img src="img/home/project/pending.png" alt="pending" />
-							<div class="project-details">
-								<h2>Pending</h2>
-								<p>
-									Pending
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12"><div style="margin-top:20px;"><a href="" class="all-works">see all work</a></div></div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end project area -->
-
-		<!-- start certification area -->
-		<section id="certification" class="certification-area">
-			<div class="container">
-				<div class="row">
-					<h2 class="certification-header">Latest Certification</h2>
-
-					<div id="cert">
-						<div class="container">
-							<!-- portfolio section -->
-							<section class="works text-center">
-								<div class="container">
-									<div class="row">
-										<div class="col-md-12">
-											<ul class="list-inline">
-												<li class="filter active" data-filter=".all">All</li>
-												<li class="filter" data-filter=".software-development">Software Development</li>
-												<li class="filter" data-filter=".web-AWS">Amazon Web Services</li>
-												<li class="filter" data-filter=".web-Database">Database</li >
-											</ul>
-										</div>
-
-
-										<!-- single portfolio item -->
-										<div class="col-md-4 col-sm-6 mix software-development all" data-myorder="2">
-
-											<div class="single-work wow slideInLeft" data-wow-delay="0.3s">
-												<img src="img/home/cert/cert1.jpg" alt="#">
-												<div class="overlay">
-													<h3>MTA: Software Development Fundamentals</h3>
-													<a href="#" type="button" data-toggle="modal" data-target="#myModal1">
-														<i class="fa fa-search-plus"></i></a>
-													<!-- Modal -->
-													<div class="modal fade" id="myModal1" role="dialog">
-														<div class="modal-dialog">
-															<!-- Modal content-->
-															<div class="modal-content text-center">
-																<div class="modal-header">
-																	<button type="button" class="close" data-dismiss="modal">&times;</button>
-																	<h4>MTA: Software Development Fundamentals</h4>
-																</div>
-																<div class="col-md-12">
-																	<div class="modal-body col-md-8 col-md-offset-2">
-																		<ul class="list-inline">
-																			<li>ISSUED BY Microsoft</li>
-																			<li>ISSUED ON 10 Jun 2017</li>
-																		</ul>
-																		<div class="profile-card text-center">
-
-																			<div class="profile-info">
-																				<h2 class="hvr-underline-from-center"><span>MTA: Software Development Fundamentals</span></h2>
-																				<div class="cert-info">
-																					<h4>Skills:</h4>
-																					<button class="button button4">Core Programming</button>
-																					<button class="button button4">Databases</button>
-																					<button class="button button4">Desktop Applications</button>
-																					<button class="button button4">General Software Development</button>
-																					<button class="button button4">Object-oriented Programming</button>
-																					<button class="button button4">Web Applications</button>
-																				</div>
-																			</div>
-
-																		</div>
-
-
-																	</div>
-																</div>
-																<div class="modal-footer">
-																	<button type="button" class="btn btn-default" data-dismiss="modal">Close <i class="fa fa-times"></i></button>
-																</div>
-															</div>
-
-														</div>
-													</div>
-												</div>
-											</div>
-
-
-										</div>
-										<!-- single cert item -->
-										<div class="col-md-4 col-sm-6 mix web-AWS all" data-myorder="3">
-											<div class="single-work wow slideInDown" data-wow-delay="0.3s">
-												<img src="img/home/cert/cert2.jpg" alt="#">
-												<div class="overlay">
-													<h3>AWS Certified Developer - Associate</h3>
-													<a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-search-plus"></i></a>
-													<div class="modal fade" id="myModal3" role="dialog">
-														<div class="modal-dialog">
-
-															<!-- Modal content-->
-															<div class="modal-content text-center">
-																<div class="modal-header">
-																	<button type="button" class="close" data-dismiss="modal">&times;</button>
-																	<h4>AWS Certified Developer - Associate</h4>
-																</div>
-																<div class="col-md-12">
-																	<div class="modal-body col-md-8 col-md-offset-2">
-																		<ul class="list-inline list">
-																			<li>ISSUED BY Amazon</li>
-																			<li>ISSUED ON 6 Feb 2018</li>
-																		</ul>
-
-																		<div class="profile-card text-center">
-																			<div class="profile-info">
-																				<h2 class="hvr-underline-from-center">
-																					<span>AWS Certified Developer – Associate</span>
-																				</h2>
-																				<div>
-																					<h4>Skills:</h4>
-																					<button class="button button4">AWS Fundamentals</button>
-																					<button class="button button4">Designing and Developing</button>
-																					<button class="button button4">Deployment and Security</button>
-																					<button class="button button4">Debugging</button>
-																				</div>
-																			</div>
-
-																		</div>
-
-
-																	</div>
-																</div>
-																<div class="modal-footer">
-																	<button type="button" class="btn btn-default" data-dismiss="modal">Close <i class="fa fa-times"></i></button>
-																</div>
-															</div>
-
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<!-- single cert item -->
-										<div class="col-md-4 col-sm-6 mix web-Database all" data-myorder="4">
-											<div class="single-work wow slideInRight" data-wow-delay="0.3s">
-												<img src="img/home/cert/cert3.jpg" alt="#">
-												<div class="overlay">
-													<h3>MTA: Database Fundamentals</h3>
-													<a href="#" data-toggle="modal" data-target="#myModal5"><i class="fa fa-search-plus"></i></a>
-													<div class="modal fade" id="myModal5" role="dialog">
-														<div class="modal-dialog">
-
-															<!-- Modal content-->
-															<div class="modal-content text-center">
-																<div class="modal-header">
-																	<button type="button" class="close" data-dismiss="modal">&times;</button>
-																	<h4>MTA: Database Fundamentals</h4>
-																</div>
-																<div class="col-md-12">
-																	<div class="modal-body col-md-8 col-md-offset-2">
-																		<ul class="list-inline">
-																			<li>ISSUED BY Microsoft</li>
-																			<li>ISSUED ON 14 Jun 2017</li>
-																		</ul>
-
-																		<div class="profile-card text-center">
-																			<div class="profile-info">
-																				<h2 class="hvr-underline-from-center"><span>MTA: Database Fundamentals</span></h2>
-																				<div>
-																					<h4>Skills:</h4>
-																					<button class="button button4">Core Database Concepts</button>
-																					<button class="button button4">Creating Database Objects</button>
-																					<button class="button button4">Data Manipulation </button>
-																					<button class="button button4">Data Storage</button>
-																					<button class="button button4">Database Administration</button>
-																				</div>
-																			</div>
-
-																		</div>
-
-																	</div>
-																</div>
-																<div class="modal-footer">
-																	<button type="button" class="btn btn-default" data-dismiss="modal">Close <i class="fa fa-times"></i></button>
-																</div>
-															</div>
-
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-
-
-										<!-- single cert item -->
-										<div class="col-md-4 col-sm-6 mix web-Database all" data-myorder="8">
-											<div class="single-work wow slideInLeft" data-wow-delay="0.5s">
-												<img src="img/home/cert/cert4.jpg" alt="#">
-												<div class="overlay">
-													<h3>Exam 461: Querying Microsoft SQL Server 2012/2014</h3>
-													<a href="#" data-toggle="modal" data-target="#myModal9"><i class="fa fa-search-plus"></i></a>
-													<div class="modal fade" id="myModal9" role="dialog">
-														<div class="modal-dialog">
-
-															<!-- Modal content-->
-															<div class="modal-content text-center">
-																<div class="modal-header">
-																	<button type="button" class="close" data-dismiss="modal">&times;</button>
-																	<h4>Exam 461: Querying Microsoft SQL Server 2012/2014</h4>
-																</div>
-																<div class="col-md-12">
-																	<div class="modal-body col-md-8 col-md-offset-2">
-																		<ul class="list-inline">
-																			<li>ISSUED BY Microsoft</li>
-																			<li>ISSUED ON 16 Dec 2017</li>
-																		</ul>
-
-																		<div class="profile-card text-center">
-																			<div class="profile-info">
-																				<h2 class="hvr-underline-from-center">
-																					<span>Querying Microsoft SQL Server</span>
-																				</h2>
-																				<div>
-																					<h4>Skills:</h4>
-																					<button class="button button4">Data Management</button>
-																					<button class="button button4">Database Management</button>
-																					<button class="button button4">Microsoft SQL Server 2012</button>
-																					<button class="button button4">Microsoft SQL Server 2014</button>
-																					<button class="button button4">Troubleshoot Queries</button>
-																				</div>
-																			</div>
-																		</div>
-
-																	</div>
-																</div>
-																<div class="modal-footer">
-																	<button type="button" class="btn btn-default" data-dismiss="modal">Close <i class="fa fa-times"></i></button>
-																</div>
-															</div>
-
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section><!-- end of section -->
-
-						</div>
-					</div><!-- /cert page-->
-
-
-
-				</div>
-			</div>
-		</section>
-		<!-- end cert area -->
-
-		<!-- start work experience area -->
-		<section id="work-experience" class="work-step-area">
-			<div class="container">
-				<div class="row">
-					<h2 class="work-step-header">Work Experience</h2>
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="bar wow fadeInDown" data-wow-delay="1.5s"></div>
-						<div class="step">
-							<ul class="steps">
-                <li>
-                  <div class="single-step wow slideInRight" data-wow-delay="0.3s">
-                    <h2>Aetna</h2>
-                    <p>Software Engineer</p>
-                  </div>
-                </li>
-                <li class="left">
-                  <div class="single-step wow slideInLeft" data-wow-delay="0.3s">
-                    <h2>Comcast</h2>
-                    <p>Software Developer</p>
-                  </div>
-                </li>
-								<li>
-									<div class="single-step wow slideInRight" data-wow-delay="0.3s">
-										<h2>CVS Health</h2>
-										<p>Java Developer</p>
-									</div>
-								</li>
-								<li class="left">
-									<div class="single-step wow slideInLeft" data-wow-delay="0.3s">
-										<h2>GO3 Solutions, inc</h2>
-										<p>Web Developer Internsip</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end work experience area -->
-
-		<!-- start contact area -->
-		<section id="contact" class="contact-area">
-			<div class="contact-overlay">
-				<div class="container">
-					<div class="row">
-						<h2 class="contact-header">Get in touch with me</h2>
-						<div class="col-md-6 col-sm-7 wow slideInLeft col-md-offset-1" data-wow-delay="0.3s">
-							<div>
-								<input type="text" id="contact_name" placeholder="&nbsp;&nbsp;Your Name" />
-								<input type="email"  id="contact_email" placeholder="&nbsp;&nbsp;Your Email" />
-								<input type="text" id="contact_subject" placeholder="&nbsp;&nbsp;The Subject" />
-								<textarea name="text" id="contact_message" placeholder="&nbsp;&nbsp;Your Message"></textarea>
-								<input type="button" onclick="contact_validation()" class="btn" value="submit"/>
-							</div>
-						</div>
-						<div class="col-md-5 col-sm-5">
-							<div class="contact-detils wow slideInRight" data-wow-delay="0.3s">
-								<h2>contact details</h2>
-								<p>
-									If you have any suggestion, please free to contact.
-								</p>
-								<h4><i class="fa fa-map-marker"></i> Iselin, NJ</h4>
-								<h4><i class="fa fa-phone"></i> +1(646)301-2053</h4>
-								<h4><i class="fa fa-envelope"></i> rex.chen.cs@gmail.com</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end contact area -->
-
-		<!-- start footer blog area -->
-		<section class="footer-blog-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 col-sm-3">
-						<div class="get-in-touch wow slideInLeft" data-wow-delay="0.3s">
-							<h2>get in touch</h2>
-							<p>Free to contact me if you have any suggestion </p>
-							<div class="nomargin">
-							<h4><i class="fa fa-map-marker"></i> New Jersey, USA</h4>
-							<h4><i class="fa fa-phone"></i><a href="tel:+16463012053"> +1(646)301-2053</a></h4>
-							<h4><i class="fa fa-envelope"></i> <a href="mailto:rex.chen.cs@gmail.com">rex.chen.cs@gmail.com</a></h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3">
-						<div class="twitter wow slideInLeft" data-wow-delay="0.5s">
-							<h2>Social Media</h2>
-							<div class="social-icons">
-								<ul class="nomargin">
-									<a href="https://www.facebook.com/rex.chen.cs"><i class="fa fa-facebook-square fa-3x social-fb" ></i></a>
-									<a href="https://www.linkedin.com/in/rexchenincs"><i class="fa fa-linkedin-square fa-3x social-in"></i></a>
-									<a href="https://github.com/RexChenCs"><i class="fa fa-github-square fa-3x social-gt"></i></a>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3">
-						<div class="popular-post wow slideInLeft" data-wow-delay="0.7s">
-							<h2>other links</h2>
-							<div class="nomargin">
-								<div class="single-popular-post">
-									<a href="https://github.com/YellowLife/fantasydefense2"> Web Application</a>
-								</div>
-								<div class="single-popular-post">
-									<a href="https://github.com/RexChenCs/Cprogramming"> Network Programming</a>
-								</div>
-								<div class="single-popular-post">
-									<a href="https://github.com/RexChenCs/JourneyThroughEurope"> Game Programming</a>
-								</div>
-								<div class="single-popular-post">
-									<a href="https://github.com/RexChenCs/OnlineBudgetManager"> Budget Manager</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3">
-						<div class="about-us wow slideInLeft" data-wow-delay="0.9s">
-							<h2>about me</h2>
-							<ul class="nomargin">
-								<li><a  href="./document/rex_chen_resume.pdf"></i>My Resume</a></li>
-								<li><a  href="https://www.youracclaim.com/user/rex-chen.certification"> My Certifications</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end footer blog area -->
-
-		<!-- start footer area -->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5">
-						<p>&copy; 2018 All rights reserved by rex chen</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- end footer area -->
-
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-						<h4 class="modal-title" id="myModalLabel">More About Me</h4>
-					</div>
-					<div class="modal-body">
-						<center>
-							<img src="./img/home/profile/me.png" name="aboutme" width="140" height="140" border="0" class="img-circle">
-							<h3 class="media-heading">Rex Chen <small>NJ, USA</small></h3>
-							<span><strong>Skills: </strong></span>
-							<span class="label label-success">Java</span>
-							<br>
-							<span class="label label-info">Oracle SQL</span>
-							<span class="label label-info">Redis</span>
-							<br>
-							<span class="label label-warning">HTML5/CSS</span>
-							<span class="label label-warning">JavaScript</span>
-							<span class="label label-warning">Bootstrap</span>
-							<span class="label label-warning">JQuery/Ajax</span>
-						</center>
-						<hr>
-						<center>
-							<p class="text-left"><strong>Bio: </strong><br>
-								I have in-depth understanding and solid skills in Database Systems, Analysis of Algorithms, Web Technologies, Software Engineering, Internet Programming, Computer Networks and Systems Fundamentalsto transform data into business insights. With excellent programming, problem solving and communication skills, I will bring to the table not only my knowledge and well-rounded skills set that fit the job so well, but also a great, positive attitude - I am equally comfortable working as a member of a team and independently. I’m self-motivated, productive, reliable, and I'm a quick learner.
-								<br>
-						</center>
-					</div>
-					<div class="modal-footer">
-						<center>
-							<button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough</button>
-						</center>
 					</div>
 				</div>
 			</div>
 		</div>
+	</section>
+	<!-- end work experience area -->
 
-      <script src="./js/home/jquery-2.1.4.min.js"></script>
-      <script src="./js/home/bootstrap.min.js"></script>
-      <script src="./js/home/owl.carousel.min.js"></script>
-      <script src="./js/home/wow.min.js"></script>
-      <script src="./js/home/scroll/jquery.nicescroll.js"></script>
-      <script src="./js/home/scroll/jquery.scrollUp.min.js"></script>
-      <script src="./js/home/main.js"></script>
-      <script src="./js/home/cert.js"></script>
-      <script src="./js/home/jquery.mixitup.js"></script>
+	<!-- start contact area -->
+	<!-- <section id="contact" class="contact-area">
+		<div class="contact-overlay">
+			<div class="container">
+				<div class="row">
+					<h2 class="contact-header">Get in touch with me</h2>
+					<div class="col-md-6 col-sm-7 wow slideInLeft col-md-offset-1" data-wow-delay="0.3s">
+						<div>
+							<input type="text" id="contact_name" placeholder="&nbsp;&nbsp;Your Name" />
+							<input type="email" id="contact_email" placeholder="&nbsp;&nbsp;Your Email" />
+							<input type="text" id="contact_subject" placeholder="&nbsp;&nbsp;The Subject" />
+							<textarea name="text" id="contact_message"
+								placeholder="&nbsp;&nbsp;Your Message"></textarea>
+							<input type="button" onclick="contact_validation()" class="btn" value="submit" />
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-5">
+						<div class="contact-detils wow slideInRight" data-wow-delay="0.3s">
+							<h2>contact details</h2>
+							<p>
+								If you have any suggestion, please free to contact.
+							</p>
+							<h4><i class="fa fa-map-marker"></i> Iselin, NJ</h4>
+							<h4><i class="fa fa-phone"></i> +1(646)301-2053</h4>
+							<h4><i class="fa fa-envelope"></i> rex.chen.cs@gmail.com</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- end contact area -->
 
-  </body>
+	<!-- start footer blog area -->
+	<section class="footer-blog-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3">
+					<div class="get-in-touch wow slideInLeft" data-wow-delay="0.3s">
+						<h2>get in touch</h2>
+						<p>Free to contact me if you have any suggestion </p>
+						<div class="nomargin">
+							<h4><i class="fa fa-map-marker"></i> New Jersey, USA</h4>
+							<h4><i class="fa fa-phone"></i><a href="tel:+16463012053"> +1(646)301-2053</a></h4>
+							<h4><i class="fa fa-envelope"></i> <a
+									href="mailto:rex.chen.cs@gmail.com">rex.chen.cs@gmail.com</a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="twitter wow slideInLeft" data-wow-delay="0.5s">
+						<h2>Social Media</h2>
+						<div class="social-icons">
+							<ul class="nomargin">
+								<a href="https://www.facebook.com/rex.chen.cs"><i
+										class="fa fa-facebook-square fa-3x social-fb"></i></a>
+								<a href="https://www.linkedin.com/in/rexchenincs"><i
+										class="fa fa-linkedin-square fa-3x social-in"></i></a>
+								<a href="https://github.com/RexChenCs"><i
+										class="fa fa-github-square fa-3x social-gt"></i></a>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="popular-post wow slideInLeft" data-wow-delay="0.7s">
+						<h2>other links</h2>
+						<div class="nomargin">
+							<div class="single-popular-post">
+								<a href="https://github.com/YellowLife/fantasydefense2"> Web Application</a>
+							</div>
+							<div class="single-popular-post">
+								<a href="https://github.com/RexChenCs/Cprogramming"> Network Programming</a>
+							</div>
+							<div class="single-popular-post">
+								<a href="https://github.com/RexChenCs/JourneyThroughEurope"> Game Programming</a>
+							</div>
+							<div class="single-popular-post">
+								<a href="https://github.com/RexChenCs/OnlineBudgetManager"> Budget Manager</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="about-us wow slideInLeft" data-wow-delay="0.9s">
+						<h2>about me</h2>
+						<ul class="nomargin">
+							<li><a href="./document/rex_chen_resume.pdf"></i>My Resume</a></li>
+							<li><a href="https://www.youracclaim.com/user/rex-chen.certification"> My Certifications</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end footer blog area -->
+
+	<!-- start footer area -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<p>&copy; 2018 All rights reserved by rex chen</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer area -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title" id="myModalLabel">More About Me</h4>
+				</div>
+				<div class="modal-body">
+					<center>
+						<img src="./img/home/profile/me.png" name="aboutme" width="140" height="140" border="0"
+							class="img-circle">
+						<h3 class="media-heading">Rex Chen <small>NJ, USA</small></h3>
+						<span><strong>Skills: </strong></span>
+						<span class="label label-success">Java</span>
+						<br>
+						<span class="label label-info">Oracle SQL</span>
+						<span class="label label-info">Redis</span>
+						<br>
+						<span class="label label-warning">HTML5/CSS</span>
+						<span class="label label-warning">JavaScript</span>
+						<span class="label label-warning">Bootstrap</span>
+						<span class="label label-warning">JQuery/Ajax</span>
+					</center>
+					<hr>
+					<center>
+						<p class="text-left"><strong>Bio: </strong><br>
+							I have in-depth understanding and solid skills in Database Systems, Analysis of Algorithms,
+							Web Technologies, Software Engineering, Internet Programming, Computer Networks and Systems
+							Fundamentalsto transform data into business insights. With excellent programming, problem
+							solving and communication skills, I will bring to the table not only my knowledge and
+							well-rounded skills set that fit the job so well, but also a great, positive attitude - I am
+							equally comfortable working as a member of a team and independently. I’m self-motivated,
+							productive, reliable, and I'm a quick learner.
+							<br>
+					</center>
+				</div>
+				<div class="modal-footer">
+					<center>
+						<button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough</button>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/home/jquery-2.1.4.min.js"></script>
+	<script src="./js/home/bootstrap.min.js"></script>
+	<script src="./js/home/owl.carousel.min.js"></script>
+	<script src="./js/home/wow.min.js"></script>
+	<script src="./js/home/jquery.scrollUp.min.js"></script>
+	<script src="./js/home/main.js"></script>
+	<script src="./js/home/cert.js"></script>
+	<script src="./js/home/jquery.mixitup.js"></script>
+
+</body>
+
 </html>
